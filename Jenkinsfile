@@ -4,7 +4,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-id')
         DOCKER_IMAGE = "vijaya123qw/task6:latest"
         AWS_REGION = "ap-south-1"
-        CLUSTER_NAME = "vijayacluster"   // 👈 change this
+        CLUSTER_NAME = "myclr"   // 👈 change this
     }
     stages {
         stage('Checkout') {
