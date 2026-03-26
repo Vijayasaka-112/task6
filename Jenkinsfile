@@ -2,14 +2,14 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-id')
-        DOCKER_IMAGE = "ranigali/task6:latest"
-        AWS_REGION = "us-east-1"
-        CLUSTER_NAME = "ranicluster"   // 👈 change this
+        DOCKER_IMAGE = "vijaya123qw/task6:latest"
+        AWS_REGION = "ap-south-1"
+        CLUSTER_NAME = "vijayacluster"   // 👈 change this
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Rani-06/task6.git'
+                git branch: 'main', url: 'https://github.com/Vijayasaka-112/task6.gitt'
             }
         }
         stage('Build Docker Image') {
