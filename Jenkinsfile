@@ -33,5 +33,12 @@ pipeline {
                 '''
             }
         }
+         stage('Kubernetes apply cmd') {
+            steps {
+                sh '''
+                    kubectl get svc
+                '''
+            }
+        }
     }
 }
