@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: rose-web
-  template:
+  template: 
     metadata:
       labels:
         app: rose-web
